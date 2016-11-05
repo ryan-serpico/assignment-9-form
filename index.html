@@ -1,124 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>The Macinstosh Quiz</title>
+    <title>The Macinstosh Quiz</title>
 
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
+
 <body>
 
 
-<div class="container">
-  <div class="row">
-    <section class="col-xs-12">
-      <h1><span class="glyphicon glyphicon-floppy-disk"></span> The Macintosh </h1>
-      <p> Apple's Macintosh was one of the first personal computers on the market to feature both a mouse and a graphical user interface that everyday people could buy. For decades, the Mac has introduced new ways of computing that has made the world, as a whole, more productive. Below is a quiz to see how much you know about the computer from the fruit company, and the questions are based on this <a href="https://en.wikipedia.org/wiki/Macintosh">Wikipedia entry</a>.</p>
-        <form>
-          <fieldset class="form-group">
-            <legend>Written response</legend>
-            <div class="form-group">
-              <label>What was the first kind of cat that Mac OS X was named after?</label>
-              <input class="form-control" type="text" id="questionOne"
-                placeholder="Hint: Its the same cat that's the mascot of Cheetos.">
-            </div>
+    <div class="container">
+        <div class="row">
+            <section class="col-xs-12">
+                <h1><span class="glyphicon glyphicon-floppy-disk"></span> The Macintosh </h1>
+                <p> Apple's Macintosh was one of the first personal computers on the market to feature both a mouse and a graphical user interface that everyday people could buy. For decades, the Mac has introduced new ways of computing that has made the
+                    world, as a whole, more productive. Below is a quiz to see how much you know about the computer from the fruit company, and the questions are based on this <a href="https://en.wikipedia.org/wiki/Macintosh">Wikipedia entry</a>.</p>
+                <form id="myForm" action="/echo/html/" method="post">
+                    <fieldset class="form-group">
+                        <legend>Written response</legend>
+                        <div class="form-group">
+                            <label for="questionOne">What was the first kind of cat that Mac OS X was named after?</label>
+                            <input class="form-control" type="text" id="questionOne" name="textPracticeOne" placeholder="Hint: Its the same cat that's the mascot of Cheetos.">
+                        </div>
 
 
-            <div class="form-group">
-              <label>Who designed most of the icon elements on the original Macintosh?</label>
-              <input class="form-control" type="text" id="questionTwo"
-                placeholder="Hint: Not Steve Wozniak">
-            </div>
+                        <div class="form-group">
+                            <label for="questionTwo">Who designed most of the icon elements on the original Macintosh?</label>
+                            <input class="form-control" type="text" id="questionTwo" name="textPracticeTwo" placeholder="Hint: Not Steve Wozniak">
+                        </div>
 
-            <div class="form-group">
-              <label for="textInputName">While they were the company who brought it to the mainstream, Apple did not create and develop the original graphical user interface. Who was it, and what is the story behind it?</label>
-              <textarea class="form-control" id="textInputName"
-              placeholder="Hint: They're known best for their printers."></textarea>
-            </div>
+                        <div class="form-group">
+                            <label for="textInputName">While they were the company who brought it to the mainstream, Apple did not create and develop the original graphical user interface. Who was it, and what is the story behind it?</label>
+                            <textarea class="form-control" id="textInputName" name="textPracticeThree" placeholder="Hint: They're known best for their printers."></textarea>
+                        </div>
+                    </fieldset>
 
-            <div class="form-group">
-              <label for="questionThree">After Steve Jobs returned to Apple, he and Sir Jonathan Ive redesigned the iMac and returned it to an all-in-one design with an all-new translucent body and a "bondi blue" color option. What year was it released?</label>
-            <div class="input-group">
-              <span class="input-group-addon" id="basic-addon1">19</span>
-              <input class="form-control" type="text" id="questionThree"
-                placeholder="Last two numbers of the year.">
-            </div>
-          </div>
-          </fieldset>
-
-          <fieldset class="form-group">
-            <legend>Multiple choice</legend>
-            <div class="form-group">
-              <label>What year was the original Macintosh released?</label>
-              <div class="radio">
-                <label><input type="radio" name="radioPractice" id="option1" value="">
+                    <fieldset class="form-group">
+                        <legend>Multiple choice</legend>
+                        <div class="form-group">
+                            <label>What year was the original Macintosh released?</label>
+                            <div class="radio">
+                                <label><input type="radio" name="radioPractice" id="option1" value="1984">
                   1984
                 </label>
-              </div>
-              <div class="radio">
-                <label><input type="radio" name="radioPractice" id="option2" value="">
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="radioPractice" id="option2" value="2008">
                   2008
                 </label>
-              </div>
-              <div class="radio">
-                <label><input type="radio" name="radioPractice" id="option3" value="">
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="radioPractice" id="option3" value="1998">
                   1998
                 </label>
-              </div>
-              <div class="radio">
-                <label><input type="radio" name="radioPractice" id="option4" value="">
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="radioPractice" id="option4" value="1993">
                   1993
                 </label>
-              </div>
-            </div>
+                            </div>
+                        </div>
 
 
-            <div class="form-group">
-              <label>What two applications came with the original Macintosh to show off its graphical user interface?</label>
-              <div class="checkbox">
-                <label><input type="checkbox" name="checkboxPractice" id="apple1" value="">MacPaint</label>
-              </div>
+                        <div class="form-group">
+                            <label>What two applications came with the original Macintosh to show off its graphical user interface?</label>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="checkboxPractice" id="apple1" value="">MacPaint</label>
+                            </div>
 
-              <div class="checkbox">
-                <label><input type="checkbox" name="checkboxPractice" id="apple2" value="">iWork</label>
-              </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="checkboxPractice" id="apple2" value="iWork">iWork</label>
+                            </div>
 
-              <div class="checkbox">
-                <label><input type="checkbox" name="checkboxPractice" id="apple3" value="">MacWrite </label>
-              </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="checkboxPractice" id="apple3" value="MacWrite">MacWrite </label>
+                            </div>
 
-              <div class="checkbox">
-                <label><input type="checkbox" name="checkboxPractice" id="apple4" value="">Safari</label>
-              </div>
-          </div>
-          <div class="form-group">
-            <label>Who was the author of the book that the original Macintosh commercial was based on?</label>
-              <select name="dropDownMenu" id="menuItems">
-                <option>Ernest Hemingway</option>
-                <option>J.K. Rowling</option>
-                <option>George Orwell</option>
-                <option>Dr. Seuss</option>
-                <option>Isaac Asimov</option>
-                <option>Mark Twain</option>
-                <option>Lemony Snicket</option>
-                <option>Walter Isaacson</option>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="checkboxPractice" id="apple4" value="Safari">Safari</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Who was the author of the book that the original Macintosh commercial was based on?</label>
+                            <select name="dropDownMenu" id="menuItems">
+                <option value="Ernest Hemingway">Ernest Hemingway</option>
+                <option value="J.K. Rowling">J.K. Rowling</option>
+                <option value="George Orwell">George Orwell</option>
+                <option value="Dr. Seuss">Dr. Seuss</option>
+                <option value="Isaac Asimov">Isaac Asimov</option>
+                <option value="Mark Twain">Mark Twain</option>
+                <option value="Lemony Snicket">Lemony Snicket</option>
+                <option value="Walter Isaacson">Walter Isaacson</option>
               </select>
-          </div>
-          </filedset>
+                        </div>
+                    </fieldset>
 
-          <div class="form-group col-md-2">
-            <input type="submit" value="Submit" class="btn btn-success btn-lg btn-block">
-            <input type="reset" value="Reset" class="btn btn-danger btn-lg btn-block">
-          </div>
-        </form>
-      </section>
-  </div>
-</div>
+                    <div class="form-group col-md-2">
+                        <input type="submit" value="Submit" class="btn btn-success btn-lg btn-block">
+                        <input type="reset" value="Reset" class="btn btn-danger btn-lg btn-block">
+                    </div>
+                </form>
+                <div id="showAnswers" class="alert alert-success" role="alert"></div>
+            </section>
+        </div>
+    </div>
 
 
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/form_processor.js"></script>
 </body>
